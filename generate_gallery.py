@@ -10,7 +10,7 @@ output_file = "index.html"
 image_folder = "photos" # input folder with images
 thumbs_folder = Path(image_folder) / "thumbs"
 thumb_size = (400, 400)
-write_caption_on_image = True
+write_caption_on_image = False
 
 thumbs_folder.mkdir(parents=True, exist_ok=True)
 
