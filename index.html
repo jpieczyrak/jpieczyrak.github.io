@@ -4,10 +4,14 @@
   <meta charset="UTF-8">
   <title>Jędrzej Pieczyrak - Portfolio</title>
   <link rel="stylesheet" href="https://unpkg.com/photoswipe@5/dist/photoswipe.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js"></script>
   <style>
     body { font-family: sans-serif; background: #111; color: #eee; padding: 2rem; }
-    .gallery { display: flex; flex-wrap: wrap; gap: 10px; }
-    .gallery a img { height: 200px; height: auto; border: 2px solid #333; }
+    #gallery {  width: 90%;  margin: auto;}
+    .gallery a img {  border: 2px solid #333; }
     .pswp__custom-caption {
       color: #eee;
       font-size: 14px;
@@ -30,280 +34,315 @@
 <body>
 <h1>Jędrzej Pieczyrak - Portfolio</h1>
 <div class="gallery" id="gallery">
-  <a href="photos/001_2018-10-30_IMG_2134.jpg" 
+  <a href="photos/2018-10-30_IMG_2134.jpg" 
     data-pswp-width="1200" data-pswp-height="800" 
     data-caption="[2018-10] Canon EOS 350D DIGITAL + 18.0-55.0 mm | f/5.0 1/1000s ISO 100 @21mm">
-    <img src="photos/thumbs/001_2018-10-30_IMG_2134.jpg" alt="[2018-10] Canon EOS 350D DIGITAL + 18.0-55.0 mm | f/5.0 1/1000s ISO 100 @21mm">
+    <img src="photos/thumbs/2018-10-30_IMG_2134.jpg" alt="[2018-10] Canon EOS 350D DIGITAL + 18.0-55.0 mm | f/5.0 1/1000s ISO 100 @21mm">
   </a>
-  <a href="photos/002_2018-10-30_IMG_2139.jpg" 
+  <a href="photos/2018-10-30_IMG_2139.jpg" 
     data-pswp-width="800" data-pswp-height="1200" 
     data-caption="[2018-10] Canon EOS 350D DIGITAL + 18.0-55.0 mm | f/10.0 1/125s ISO 100 @18mm">
-    <img src="photos/thumbs/002_2018-10-30_IMG_2139.jpg" alt="[2018-10] Canon EOS 350D DIGITAL + 18.0-55.0 mm | f/10.0 1/125s ISO 100 @18mm">
+    <img src="photos/thumbs/2018-10-30_IMG_2139.jpg" alt="[2018-10] Canon EOS 350D DIGITAL + 18.0-55.0 mm | f/10.0 1/125s ISO 100 @18mm">
   </a>
-  <a href="photos/003_2018-10-31_IMG_2210.jpg" 
+  <a href="photos/2018-10-31_IMG_2210.jpg" 
     data-pswp-width="1200" data-pswp-height="800" 
     data-caption="[2018-10] Canon EOS 350D DIGITAL + 18.0-55.0 mm | f/8.0 1/250s ISO 100 @27mm">
-    <img src="photos/thumbs/003_2018-10-31_IMG_2210.jpg" alt="[2018-10] Canon EOS 350D DIGITAL + 18.0-55.0 mm | f/8.0 1/250s ISO 100 @27mm">
+    <img src="photos/thumbs/2018-10-31_IMG_2210.jpg" alt="[2018-10] Canon EOS 350D DIGITAL + 18.0-55.0 mm | f/8.0 1/250s ISO 100 @27mm">
   </a>
-  <a href="photos/004_2018-11-03_IMG_2368.jpg" 
+  <a href="photos/2018-11-03_IMG_2368.jpg" 
     data-pswp-width="1200" data-pswp-height="800" 
     data-caption="[2018-11] Canon EOS 350D DIGITAL + 18.0-55.0 mm | f/8.0 1/400s ISO 100 @18mm">
-    <img src="photos/thumbs/004_2018-11-03_IMG_2368.jpg" alt="[2018-11] Canon EOS 350D DIGITAL + 18.0-55.0 mm | f/8.0 1/400s ISO 100 @18mm">
+    <img src="photos/thumbs/2018-11-03_IMG_2368.jpg" alt="[2018-11] Canon EOS 350D DIGITAL + 18.0-55.0 mm | f/8.0 1/400s ISO 100 @18mm">
   </a>
-  <a href="photos/005_2021-09-05_IMG_7343.jpg" 
-    data-pswp-width="1200" data-pswp-height="800" 
-    data-caption="[2021-09] Canon EOS 400D DIGITAL + EF-S18-55mm f/3.5-5.6 | f/5.0 1/60s ISO 100 @25mm">
-    <img src="photos/thumbs/005_2021-09-05_IMG_7343.jpg" alt="[2021-09] Canon EOS 400D DIGITAL + EF-S18-55mm f/3.5-5.6 | f/5.0 1/60s ISO 100 @25mm">
-  </a>
-  <a href="photos/006_2021-09-24__MG_9101.jpg" 
+  <a href="photos/2021-09-24__MG_9101.jpg" 
     data-pswp-width="1200" data-pswp-height="800" 
     data-caption="[2021-09] Canon EOS 450D + EF-S18-135mm f/3.5-5.6 IS | f/8.0 1/200s ISO 100 @126mm">
-    <img src="photos/thumbs/006_2021-09-24__MG_9101.jpg" alt="[2021-09] Canon EOS 450D + EF-S18-135mm f/3.5-5.6 IS | f/8.0 1/200s ISO 100 @126mm">
+    <img src="photos/thumbs/2021-09-24__MG_9101.jpg" alt="[2021-09] Canon EOS 450D + EF-S18-135mm f/3.5-5.6 IS | f/8.0 1/200s ISO 100 @126mm">
   </a>
-  <a href="photos/007_2021-09-24__MG_9167.jpg" 
+  <a href="photos/2021-09-24__MG_9167.jpg" 
     data-pswp-width="1200" data-pswp-height="800" 
     data-caption="[2021-09] Canon EOS 450D + EF-S18-135mm f/3.5-5.6 IS | f/7.1 1/200s ISO 100 @135mm">
-    <img src="photos/thumbs/007_2021-09-24__MG_9167.jpg" alt="[2021-09] Canon EOS 450D + EF-S18-135mm f/3.5-5.6 IS | f/7.1 1/200s ISO 100 @135mm">
+    <img src="photos/thumbs/2021-09-24__MG_9167.jpg" alt="[2021-09] Canon EOS 450D + EF-S18-135mm f/3.5-5.6 IS | f/7.1 1/200s ISO 100 @135mm">
   </a>
-  <a href="photos/008_2021-09-24__MG_9346.jpg" 
+  <a href="photos/2021-09-24__MG_9346.jpg" 
     data-pswp-width="1200" data-pswp-height="800" 
     data-caption="[2021-09] Canon EOS 450D + EF-S18-135mm f/3.5-5.6 IS | f/8.0 1/800s ISO 100 @60mm">
-    <img src="photos/thumbs/008_2021-09-24__MG_9346.jpg" alt="[2021-09] Canon EOS 450D + EF-S18-135mm f/3.5-5.6 IS | f/8.0 1/800s ISO 100 @60mm">
+    <img src="photos/thumbs/2021-09-24__MG_9346.jpg" alt="[2021-09] Canon EOS 450D + EF-S18-135mm f/3.5-5.6 IS | f/8.0 1/800s ISO 100 @60mm">
   </a>
-  <a href="photos/009_2021-09-25__MG_9742.jpg" 
+  <a href="photos/2021-09-25__MG_9742.jpg" 
     data-pswp-width="1200" data-pswp-height="800" 
     data-caption="[2021-09] Canon EOS 450D + EF-S18-135mm f/3.5-5.6 IS | f/8.0 1/160s ISO 100 @106mm">
-    <img src="photos/thumbs/009_2021-09-25__MG_9742.jpg" alt="[2021-09] Canon EOS 450D + EF-S18-135mm f/3.5-5.6 IS | f/8.0 1/160s ISO 100 @106mm">
+    <img src="photos/thumbs/2021-09-25__MG_9742.jpg" alt="[2021-09] Canon EOS 450D + EF-S18-135mm f/3.5-5.6 IS | f/8.0 1/160s ISO 100 @106mm">
   </a>
-  <a href="photos/010_2022-01-10_IMG_0273.jpg" 
+  <a href="photos/2022-01-10_IMG_0273.jpg" 
     data-pswp-width="1200" data-pswp-height="800" 
     data-caption="[2022-01] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/8.0 1/1250s ISO 100 @15mm">
-    <img src="photos/thumbs/010_2022-01-10_IMG_0273.jpg" alt="[2022-01] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/8.0 1/1250s ISO 100 @15mm">
+    <img src="photos/thumbs/2022-01-10_IMG_0273.jpg" alt="[2022-01] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/8.0 1/1250s ISO 100 @15mm">
   </a>
-  <a href="photos/011_2022-01-11_IMG_0337.jpg" 
+  <a href="photos/2022-01-11_IMG_0337.jpg" 
     data-pswp-width="1200" data-pswp-height="800" 
     data-caption="[2022-01] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/10.0 1/640s ISO 100 @33mm">
-    <img src="photos/thumbs/011_2022-01-11_IMG_0337.jpg" alt="[2022-01] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/10.0 1/640s ISO 100 @33mm">
+    <img src="photos/thumbs/2022-01-11_IMG_0337.jpg" alt="[2022-01] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/10.0 1/640s ISO 100 @33mm">
   </a>
-  <a href="photos/012_2022-01-14_IMG_0543.jpg" 
+  <a href="photos/2022-01-14_IMG_0543.jpg" 
     data-pswp-width="1200" data-pswp-height="800" 
     data-caption="[2022-01] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/11.0 1/400s ISO 100 @17mm">
-    <img src="photos/thumbs/012_2022-01-14_IMG_0543.jpg" alt="[2022-01] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/11.0 1/400s ISO 100 @17mm">
+    <img src="photos/thumbs/2022-01-14_IMG_0543.jpg" alt="[2022-01] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/11.0 1/400s ISO 100 @17mm">
   </a>
-  <a href="photos/013_2022-04-03_IMG_1209.jpg" 
+  <a href="photos/2022-04-03_IMG_1209.jpg" 
     data-pswp-width="1200" data-pswp-height="598" 
     data-caption="[2022-04] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/11.0 1/2000s ISO 640 @45mm">
-    <img src="photos/thumbs/013_2022-04-03_IMG_1209.jpg" alt="[2022-04] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/11.0 1/2000s ISO 640 @45mm">
+    <img src="photos/thumbs/2022-04-03_IMG_1209.jpg" alt="[2022-04] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/11.0 1/2000s ISO 640 @45mm">
   </a>
-  <a href="photos/014_2022-04-03_IMG_1268.jpg" 
+  <a href="photos/2022-04-03_IMG_1268.jpg" 
     data-pswp-width="1200" data-pswp-height="800" 
     data-caption="[2022-04] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/11.0 1/800s ISO 100 @15mm">
-    <img src="photos/thumbs/014_2022-04-03_IMG_1268.jpg" alt="[2022-04] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/11.0 1/800s ISO 100 @15mm">
+    <img src="photos/thumbs/2022-04-03_IMG_1268.jpg" alt="[2022-04] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/11.0 1/800s ISO 100 @15mm">
   </a>
-  <a href="photos/015_2022-04-03_IMG_1271.jpg" 
+  <a href="photos/2022-04-03_IMG_1271.jpg" 
     data-pswp-width="1200" data-pswp-height="800" 
     data-caption="[2022-04] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/11.0 1/1250s ISO 100 @15mm">
-    <img src="photos/thumbs/015_2022-04-03_IMG_1271.jpg" alt="[2022-04] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/11.0 1/1250s ISO 100 @15mm">
+    <img src="photos/thumbs/2022-04-03_IMG_1271.jpg" alt="[2022-04] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/11.0 1/1250s ISO 100 @15mm">
   </a>
-  <a href="photos/016_2022-04-03_IMG_1274.jpg" 
+  <a href="photos/2022-04-03_IMG_1274.jpg" 
     data-pswp-width="1200" data-pswp-height="800" 
     data-caption="[2022-04] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/11.0 1/1250s ISO 100 @17mm">
-    <img src="photos/thumbs/016_2022-04-03_IMG_1274.jpg" alt="[2022-04] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/11.0 1/1250s ISO 100 @17mm">
+    <img src="photos/thumbs/2022-04-03_IMG_1274.jpg" alt="[2022-04] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/11.0 1/1250s ISO 100 @17mm">
   </a>
-  <a href="photos/017_2022-04-06_IMG_1566.jpg" 
+  <a href="photos/2022-04-06_IMG_1566.jpg" 
     data-pswp-width="1200" data-pswp-height="800" 
     data-caption="[2022-04] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/11.0 1/640s ISO 100 @16mm">
-    <img src="photos/thumbs/017_2022-04-06_IMG_1566.jpg" alt="[2022-04] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/11.0 1/640s ISO 100 @16mm">
+    <img src="photos/thumbs/2022-04-06_IMG_1566.jpg" alt="[2022-04] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/11.0 1/640s ISO 100 @16mm">
   </a>
-  <a href="photos/018_2022-04-06_IMG_1700.jpg" 
+  <a href="photos/2022-04-06_IMG_1700.jpg" 
     data-pswp-width="1200" data-pswp-height="800" 
     data-caption="[2022-04] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/11.0 1/1250s ISO 100 @15mm">
-    <img src="photos/thumbs/018_2022-04-06_IMG_1700.jpg" alt="[2022-04] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/11.0 1/1250s ISO 100 @15mm">
+    <img src="photos/thumbs/2022-04-06_IMG_1700.jpg" alt="[2022-04] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/11.0 1/1250s ISO 100 @15mm">
   </a>
-  <a href="photos/019_2022-04-06_IMG_1709.jpg" 
+  <a href="photos/2022-04-06_IMG_1709.jpg" 
     data-pswp-width="800" data-pswp-height="1200" 
     data-caption="[2022-04] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/11.0 1/1250s ISO 100 @15mm">
-    <img src="photos/thumbs/019_2022-04-06_IMG_1709.jpg" alt="[2022-04] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/11.0 1/1250s ISO 100 @15mm">
+    <img src="photos/thumbs/2022-04-06_IMG_1709.jpg" alt="[2022-04] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/11.0 1/1250s ISO 100 @15mm">
   </a>
-  <a href="photos/020_2022-04-06_IMG_1732.jpg" 
+  <a href="photos/2022-04-06_IMG_1732.jpg" 
     data-pswp-width="800" data-pswp-height="1200" 
     data-caption="[2022-04] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/11.0 1/1600s ISO 100 @28mm">
-    <img src="photos/thumbs/020_2022-04-06_IMG_1732.jpg" alt="[2022-04] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/11.0 1/1600s ISO 100 @28mm">
+    <img src="photos/thumbs/2022-04-06_IMG_1732.jpg" alt="[2022-04] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/11.0 1/1600s ISO 100 @28mm">
   </a>
-  <a href="photos/021_2022-04-09_IMG_2287.jpg" 
+  <a href="photos/2022-04-09_IMG_2287.jpg" 
     data-pswp-width="1200" data-pswp-height="800" 
     data-caption="[2022-04] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/11.0 1/125s ISO 125 @31mm">
-    <img src="photos/thumbs/021_2022-04-09_IMG_2287.jpg" alt="[2022-04] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/11.0 1/125s ISO 125 @31mm">
+    <img src="photos/thumbs/2022-04-09_IMG_2287.jpg" alt="[2022-04] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/11.0 1/125s ISO 125 @31mm">
   </a>
-  <a href="photos/022_2022-07-09_IMG_2731.jpg" 
+  <a href="photos/2022-07-09_IMG_2731.jpg" 
     data-pswp-width="1200" data-pswp-height="800" 
     data-caption="[2022-07] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/7.1 1/125s ISO 100 @25mm">
-    <img src="photos/thumbs/022_2022-07-09_IMG_2731.jpg" alt="[2022-07] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/7.1 1/125s ISO 100 @25mm">
+    <img src="photos/thumbs/2022-07-09_IMG_2731.jpg" alt="[2022-07] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/7.1 1/125s ISO 100 @25mm">
   </a>
-  <a href="photos/023_2022-08-18_IMG_2747.jpg" 
+  <a href="photos/2022-08-18_IMG_2747.jpg" 
     data-pswp-width="1200" data-pswp-height="800" 
     data-caption="[2022-08] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/7.1 1/250s ISO 100 @15mm">
-    <img src="photos/thumbs/023_2022-08-18_IMG_2747.jpg" alt="[2022-08] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/7.1 1/250s ISO 100 @15mm">
+    <img src="photos/thumbs/2022-08-18_IMG_2747.jpg" alt="[2022-08] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/7.1 1/250s ISO 100 @15mm">
   </a>
-  <a href="photos/024_2022-08-22_IMG_2788.jpg" 
+  <a href="photos/2022-08-22_IMG_2788.jpg" 
     data-pswp-width="1200" data-pswp-height="800" 
     data-caption="[2022-08] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/7.1 1/500s ISO 100 @41mm">
-    <img src="photos/thumbs/024_2022-08-22_IMG_2788.jpg" alt="[2022-08] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/7.1 1/500s ISO 100 @41mm">
+    <img src="photos/thumbs/2022-08-22_IMG_2788.jpg" alt="[2022-08] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/7.1 1/500s ISO 100 @41mm">
   </a>
-  <a href="photos/025_2022-08-22_IMG_2807.jpg" 
+  <a href="photos/2022-08-22_IMG_2807.jpg" 
     data-pswp-width="800" data-pswp-height="1200" 
     data-caption="[2022-08] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/7.1 1/250s ISO 100 @15mm">
-    <img src="photos/thumbs/025_2022-08-22_IMG_2807.jpg" alt="[2022-08] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/7.1 1/250s ISO 100 @15mm">
+    <img src="photos/thumbs/2022-08-22_IMG_2807.jpg" alt="[2022-08] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/7.1 1/250s ISO 100 @15mm">
   </a>
-  <a href="photos/027_2022-08-22_IMG_2875.jpg" 
+  <a href="photos/2022-08-22_IMG_2875.jpg" 
     data-pswp-width="1200" data-pswp-height="800" 
     data-caption="[2022-08] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/13.0 1/160s ISO 100 @16mm">
-    <img src="photos/thumbs/027_2022-08-22_IMG_2875.jpg" alt="[2022-08] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/13.0 1/160s ISO 100 @16mm">
+    <img src="photos/thumbs/2022-08-22_IMG_2875.jpg" alt="[2022-08] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/13.0 1/160s ISO 100 @16mm">
   </a>
-  <a href="photos/028_2022-08-23_IMG_3012.jpg" 
-    data-pswp-width="1200" data-pswp-height="800" 
-    data-caption="[2022-08] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/7.1 1/250s ISO 100 @45mm">
-    <img src="photos/thumbs/028_2022-08-23_IMG_3012.jpg" alt="[2022-08] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/7.1 1/250s ISO 100 @45mm">
-  </a>
-  <a href="photos/029_2022-08-23_IMG_3067.jpg" 
+  <a href="photos/2022-08-23_IMG_3067.jpg" 
     data-pswp-width="800" data-pswp-height="1200" 
     data-caption="[2022-08] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/3.5 1/1000s ISO 100 @15mm">
-    <img src="photos/thumbs/029_2022-08-23_IMG_3067.jpg" alt="[2022-08] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/3.5 1/1000s ISO 100 @15mm">
+    <img src="photos/thumbs/2022-08-23_IMG_3067.jpg" alt="[2022-08] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/3.5 1/1000s ISO 100 @15mm">
   </a>
-  <a href="photos/030_2022-08-23_IMG_3120.jpg" 
+  <a href="photos/2022-08-23_IMG_3120.jpg" 
     data-pswp-width="1200" data-pswp-height="800" 
     data-caption="[2022-08] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/9.0 1/160s ISO 100 @15mm">
-    <img src="photos/thumbs/030_2022-08-23_IMG_3120.jpg" alt="[2022-08] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/9.0 1/160s ISO 100 @15mm">
+    <img src="photos/thumbs/2022-08-23_IMG_3120.jpg" alt="[2022-08] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/9.0 1/160s ISO 100 @15mm">
   </a>
-  <a href="photos/031_2022-08-24_IMG_3263.jpg" 
+  <a href="photos/2022-08-24_IMG_3263.jpg" 
     data-pswp-width="800" data-pswp-height="1200" 
     data-caption="[2022-08] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/16.0 8/5s ISO 100 @15mm">
-    <img src="photos/thumbs/031_2022-08-24_IMG_3263.jpg" alt="[2022-08] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/16.0 8/5s ISO 100 @15mm">
+    <img src="photos/thumbs/2022-08-24_IMG_3263.jpg" alt="[2022-08] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/16.0 8/5s ISO 100 @15mm">
   </a>
-  <a href="photos/032_2022-08-24_IMG_3269.jpg" 
+  <a href="photos/2022-08-24_IMG_3269.jpg" 
     data-pswp-width="1200" data-pswp-height="800" 
     data-caption="[2022-08] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/16.0 5/2s ISO 100 @15mm">
-    <img src="photos/thumbs/032_2022-08-24_IMG_3269.jpg" alt="[2022-08] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/16.0 5/2s ISO 100 @15mm">
+    <img src="photos/thumbs/2022-08-24_IMG_3269.jpg" alt="[2022-08] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/16.0 5/2s ISO 100 @15mm">
   </a>
-  <a href="photos/033_2022-08-25_IMG_3394.jpg" 
+  <a href="photos/2022-08-25_IMG_3394.jpg" 
     data-pswp-width="1200" data-pswp-height="800" 
     data-caption="[2022-08] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/11.0 1/200s ISO 100 @32mm">
-    <img src="photos/thumbs/033_2022-08-25_IMG_3394.jpg" alt="[2022-08] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/11.0 1/200s ISO 100 @32mm">
+    <img src="photos/thumbs/2022-08-25_IMG_3394.jpg" alt="[2022-08] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/11.0 1/200s ISO 100 @32mm">
   </a>
-  <a href="photos/034_2023-03-13_IMG_3522.jpg" 
+  <a href="photos/2023-03-13_IMG_3522.jpg" 
     data-pswp-width="1200" data-pswp-height="800" 
     data-caption="[2023-03] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/9.0 1/125s ISO 100 @23mm">
-    <img src="photos/thumbs/034_2023-03-13_IMG_3522.jpg" alt="[2023-03] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/9.0 1/125s ISO 100 @23mm">
+    <img src="photos/thumbs/2023-03-13_IMG_3522.jpg" alt="[2023-03] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/9.0 1/125s ISO 100 @23mm">
   </a>
-  <a href="photos/035_2023-03-13_IMG_3525.jpg" 
+  <a href="photos/2023-03-13_IMG_3525.jpg" 
     data-pswp-width="800" data-pswp-height="1200" 
     data-caption="[2023-03] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/9.0 1/160s ISO 100 @17mm">
-    <img src="photos/thumbs/035_2023-03-13_IMG_3525.jpg" alt="[2023-03] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/9.0 1/160s ISO 100 @17mm">
+    <img src="photos/thumbs/2023-03-13_IMG_3525.jpg" alt="[2023-03] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/9.0 1/160s ISO 100 @17mm">
   </a>
-  <a href="photos/036_2023-03-16_IMG_3710.jpg" 
+  <a href="photos/2023-03-16_IMG_3710.jpg" 
     data-pswp-width="1200" data-pswp-height="800" 
     data-caption="[2023-03] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/8.0 1/250s ISO 100 @15mm">
-    <img src="photos/thumbs/036_2023-03-16_IMG_3710.jpg" alt="[2023-03] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/8.0 1/250s ISO 100 @15mm">
+    <img src="photos/thumbs/2023-03-16_IMG_3710.jpg" alt="[2023-03] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/8.0 1/250s ISO 100 @15mm">
   </a>
-  <a href="photos/037_2023-03-17_IMG_3783.jpg" 
+  <a href="photos/2023-03-17_IMG_3783.jpg" 
     data-pswp-width="1200" data-pswp-height="800" 
     data-caption="[2023-03] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/8.0 1/160s ISO 100 @42mm">
-    <img src="photos/thumbs/037_2023-03-17_IMG_3783.jpg" alt="[2023-03] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/8.0 1/160s ISO 100 @42mm">
+    <img src="photos/thumbs/2023-03-17_IMG_3783.jpg" alt="[2023-03] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/8.0 1/160s ISO 100 @42mm">
   </a>
-  <a href="photos/038_2023-07-27_IMG_3966.jpg" 
+  <a href="photos/2023-07-27_IMG_3966.jpg" 
     data-pswp-width="800" data-pswp-height="1200" 
     data-caption="[2023-07] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/8.0 1/1250s ISO 100 @17mm">
-    <img src="photos/thumbs/038_2023-07-27_IMG_3966.jpg" alt="[2023-07] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/8.0 1/1250s ISO 100 @17mm">
+    <img src="photos/thumbs/2023-07-27_IMG_3966.jpg" alt="[2023-07] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/8.0 1/1250s ISO 100 @17mm">
   </a>
-  <a href="photos/039_2025-01-29_IMG_5476.jpg" 
+  <a href="photos/2025-01-29_IMG_5476.jpg" 
     data-pswp-width="800" data-pswp-height="1200" 
     data-caption="[2025-01] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/9.0 1/800s ISO 100 @15mm">
-    <img src="photos/thumbs/039_2025-01-29_IMG_5476.jpg" alt="[2025-01] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/9.0 1/800s ISO 100 @15mm">
+    <img src="photos/thumbs/2025-01-29_IMG_5476.jpg" alt="[2025-01] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/9.0 1/800s ISO 100 @15mm">
   </a>
-  <a href="photos/040_2025-01-29_IMG_5532.jpg" 
+  <a href="photos/2025-01-29_IMG_5532.jpg" 
     data-pswp-width="1200" data-pswp-height="800" 
     data-caption="[2025-01] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/10.0 1/400s ISO 100 @15mm">
-    <img src="photos/thumbs/040_2025-01-29_IMG_5532.jpg" alt="[2025-01] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/10.0 1/400s ISO 100 @15mm">
+    <img src="photos/thumbs/2025-01-29_IMG_5532.jpg" alt="[2025-01] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/10.0 1/400s ISO 100 @15mm">
   </a>
-  <a href="photos/041_2025-02-02_IMG_5636.jpg" 
+  <a href="photos/2025-02-02_IMG_5636.jpg" 
     data-pswp-width="1200" data-pswp-height="800" 
     data-caption="[2025-02] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/8.0 1/100s ISO 100 @15mm">
-    <img src="photos/thumbs/041_2025-02-02_IMG_5636.jpg" alt="[2025-02] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/8.0 1/100s ISO 100 @15mm">
+    <img src="photos/thumbs/2025-02-02_IMG_5636.jpg" alt="[2025-02] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/8.0 1/100s ISO 100 @15mm">
   </a>
-  <a href="photos/042_2025-02-02_IMG_5672.jpg" 
+  <a href="photos/2025-02-02_IMG_5672.jpg" 
     data-pswp-width="1200" data-pswp-height="800" 
     data-caption="[2025-02] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/6.3 1/1000s ISO 100 @15mm">
-    <img src="photos/thumbs/042_2025-02-02_IMG_5672.jpg" alt="[2025-02] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/6.3 1/1000s ISO 100 @15mm">
+    <img src="photos/thumbs/2025-02-02_IMG_5672.jpg" alt="[2025-02] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/6.3 1/1000s ISO 100 @15mm">
   </a>
-  <a href="photos/043_2025-02-02_IMG_5700.jpg" 
+  <a href="photos/2025-02-02_IMG_5700.jpg" 
     data-pswp-width="1200" data-pswp-height="800" 
     data-caption="[2025-02] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/7.1 1/160s ISO 100 @15mm">
-    <img src="photos/thumbs/043_2025-02-02_IMG_5700.jpg" alt="[2025-02] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/7.1 1/160s ISO 100 @15mm">
+    <img src="photos/thumbs/2025-02-02_IMG_5700.jpg" alt="[2025-02] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/7.1 1/160s ISO 100 @15mm">
   </a>
-  <a href="photos/044_2025-02-02_IMG_5719.jpg" 
+  <a href="photos/2025-02-02_IMG_5719.jpg" 
     data-pswp-width="1200" data-pswp-height="800" 
     data-caption="[2025-02] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/8.0 1/320s ISO 100 @15mm">
-    <img src="photos/thumbs/044_2025-02-02_IMG_5719.jpg" alt="[2025-02] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/8.0 1/320s ISO 100 @15mm">
+    <img src="photos/thumbs/2025-02-02_IMG_5719.jpg" alt="[2025-02] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/8.0 1/320s ISO 100 @15mm">
   </a>
-  <a href="photos/045_2025-03-03_IMG_5992.jpg" 
+  <a href="photos/2025-03-03_IMG_5992.jpg" 
     data-pswp-width="1200" data-pswp-height="800" 
     data-caption="[2025-03] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/6.3 1/80s ISO 100 @15mm">
-    <img src="photos/thumbs/045_2025-03-03_IMG_5992.jpg" alt="[2025-03] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/6.3 1/80s ISO 100 @15mm">
+    <img src="photos/thumbs/2025-03-03_IMG_5992.jpg" alt="[2025-03] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/6.3 1/80s ISO 100 @15mm">
   </a>
-  <a href="photos/046_2025-03-03_IMG_5995.jpg" 
+  <a href="photos/2025-03-03_IMG_5995.jpg" 
     data-pswp-width="800" data-pswp-height="1200" 
     data-caption="[2025-03] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/6.3 1/60s ISO 160 @15mm">
-    <img src="photos/thumbs/046_2025-03-03_IMG_5995.jpg" alt="[2025-03] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/6.3 1/60s ISO 160 @15mm">
+    <img src="photos/thumbs/2025-03-03_IMG_5995.jpg" alt="[2025-03] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/6.3 1/60s ISO 160 @15mm">
   </a>
-  <a href="photos/047_2025-03-03_IMG_5999.jpg" 
+  <a href="photos/2025-03-03_IMG_5999.jpg" 
     data-pswp-width="1200" data-pswp-height="800" 
     data-caption="[2025-03] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/6.3 1/60s ISO 100 @15mm">
-    <img src="photos/thumbs/047_2025-03-03_IMG_5999.jpg" alt="[2025-03] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/6.3 1/60s ISO 100 @15mm">
+    <img src="photos/thumbs/2025-03-03_IMG_5999.jpg" alt="[2025-03] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/6.3 1/60s ISO 100 @15mm">
   </a>
-  <a href="photos/048_2025-03-10_IMG_6139.jpg" 
+  <a href="photos/2025-03-10_IMG_6139.jpg" 
     data-pswp-width="1200" data-pswp-height="800" 
     data-caption="[2025-03] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/5.0 1/250s ISO 125 @30mm">
-    <img src="photos/thumbs/048_2025-03-10_IMG_6139.jpg" alt="[2025-03] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/5.0 1/250s ISO 125 @30mm">
+    <img src="photos/thumbs/2025-03-10_IMG_6139.jpg" alt="[2025-03] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/5.0 1/250s ISO 125 @30mm">
   </a>
-  <a href="photos/049_2025-03-10_IMG_6153.jpg" 
+  <a href="photos/2025-03-10_IMG_6153.jpg" 
     data-pswp-width="1200" data-pswp-height="800" 
     data-caption="[2025-03] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/2.8 1/160s ISO 125 @15mm">
-    <img src="photos/thumbs/049_2025-03-10_IMG_6153.jpg" alt="[2025-03] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/2.8 1/160s ISO 125 @15mm">
+    <img src="photos/thumbs/2025-03-10_IMG_6153.jpg" alt="[2025-03] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/2.8 1/160s ISO 125 @15mm">
   </a>
-  <a href="photos/050_2025-04-13_IMG_6160.jpg" 
+  <a href="photos/2025-04-13_IMG_6160.jpg" 
     data-pswp-width="1200" data-pswp-height="800" 
     data-caption="[2025-04] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/9.0 1/640s ISO 100 @15mm">
-    <img src="photos/thumbs/050_2025-04-13_IMG_6160.jpg" alt="[2025-04] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/9.0 1/640s ISO 100 @15mm">
+    <img src="photos/thumbs/2025-04-13_IMG_6160.jpg" alt="[2025-04] Canon PowerShot G1 X Mark III + 15.0-45.0 mm | f/9.0 1/640s ISO 100 @15mm">
   </a>
-  <a href="photos/051_2025-07-13__MG_0181.jpg" 
+  <a href="photos/2025-07-13__MG_0181.jpg" 
     data-pswp-width="1200" data-pswp-height="800" 
     data-caption="[2025-07] Canon EOS 450D + EF70-200mm f/4L USM | f/4.0 1/80s ISO 100 @200mm">
-    <img src="photos/thumbs/051_2025-07-13__MG_0181.jpg" alt="[2025-07] Canon EOS 450D + EF70-200mm f/4L USM | f/4.0 1/80s ISO 100 @200mm">
+    <img src="photos/thumbs/2025-07-13__MG_0181.jpg" alt="[2025-07] Canon EOS 450D + EF70-200mm f/4L USM | f/4.0 1/80s ISO 100 @200mm">
   </a>
-  <a href="photos/052_2025-07-13__MG_0199.jpg" 
+  <a href="photos/2025-07-13__MG_0199.jpg" 
     data-pswp-width="1200" data-pswp-height="800" 
     data-caption="[2025-07] Canon EOS 450D + EF70-200mm f/4L USM | f/4.0 1/400s ISO 100 @70mm">
-    <img src="photos/thumbs/052_2025-07-13__MG_0199.jpg" alt="[2025-07] Canon EOS 450D + EF70-200mm f/4L USM | f/4.0 1/400s ISO 100 @70mm">
+    <img src="photos/thumbs/2025-07-13__MG_0199.jpg" alt="[2025-07] Canon EOS 450D + EF70-200mm f/4L USM | f/4.0 1/400s ISO 100 @70mm">
   </a>
-  <a href="photos/053_2025-07-13__MG_0229.jpg" 
+  <a href="photos/2025-07-13__MG_0229.jpg" 
     data-pswp-width="800" data-pswp-height="1200" 
     data-caption="[2025-07] Canon EOS 450D + EF70-200mm f/4L USM | f/4.0 1/640s ISO 100 @200mm">
-    <img src="photos/thumbs/053_2025-07-13__MG_0229.jpg" alt="[2025-07] Canon EOS 450D + EF70-200mm f/4L USM | f/4.0 1/640s ISO 100 @200mm">
+    <img src="photos/thumbs/2025-07-13__MG_0229.jpg" alt="[2025-07] Canon EOS 450D + EF70-200mm f/4L USM | f/4.0 1/640s ISO 100 @200mm">
   </a>
-  <a href="photos/054_2025-07-13__MG_0284.jpg" 
+  <a href="photos/2025-07-13__MG_0284.jpg" 
     data-pswp-width="800" data-pswp-height="1200" 
     data-caption="[2025-07] Canon EOS 450D + EF70-200mm f/4L USM | f/4.0 1/200s ISO 100 @200mm">
-    <img src="photos/thumbs/054_2025-07-13__MG_0284.jpg" alt="[2025-07] Canon EOS 450D + EF70-200mm f/4L USM | f/4.0 1/200s ISO 100 @200mm">
+    <img src="photos/thumbs/2025-07-13__MG_0284.jpg" alt="[2025-07] Canon EOS 450D + EF70-200mm f/4L USM | f/4.0 1/200s ISO 100 @200mm">
   </a>
-  <a href="photos/055_2025-07-13__MG_0388.jpg" 
+  <a href="photos/2025-07-13__MG_0388.jpg" 
     data-pswp-width="1200" data-pswp-height="800" 
     data-caption="[2025-07] Canon EOS 450D + EF70-200mm f/4L USM | f/4.0 1/800s ISO 100 @145mm">
-    <img src="photos/thumbs/055_2025-07-13__MG_0388.jpg" alt="[2025-07] Canon EOS 450D + EF70-200mm f/4L USM | f/4.0 1/800s ISO 100 @145mm">
+    <img src="photos/thumbs/2025-07-13__MG_0388.jpg" alt="[2025-07] Canon EOS 450D + EF70-200mm f/4L USM | f/4.0 1/800s ISO 100 @145mm">
   </a>
-  <a href="photos/056_2025-07-13__MG_0410.jpg" 
+  <a href="photos/2025-07-13__MG_0410.jpg" 
     data-pswp-width="1200" data-pswp-height="800" 
     data-caption="[2025-07] Canon EOS 450D + EF70-200mm f/4L USM | f/4.0 1/320s ISO 100 @84mm">
-    <img src="photos/thumbs/056_2025-07-13__MG_0410.jpg" alt="[2025-07] Canon EOS 450D + EF70-200mm f/4L USM | f/4.0 1/320s ISO 100 @84mm">
+    <img src="photos/thumbs/2025-07-13__MG_0410.jpg" alt="[2025-07] Canon EOS 450D + EF70-200mm f/4L USM | f/4.0 1/320s ISO 100 @84mm">
+  </a>
+  <a href="photos/2025-07-18_20250718-9374-IMG0316-Enhanced-NR.jpg" 
+    data-pswp-width="1200" data-pswp-height="800" 
+    data-caption="[2025-07] Canon EOS R10 + RF-S18-150mm F3.5-6.3 IS STM | f/11.0 1/400s ISO 100 @150mm">
+    <img src="photos/thumbs/2025-07-18_20250718-9374-IMG0316-Enhanced-NR.jpg" alt="[2025-07] Canon EOS R10 + RF-S18-150mm F3.5-6.3 IS STM | f/11.0 1/400s ISO 100 @150mm">
+  </a>
+  <a href="photos/2025-07-18_IMG_0481.jpg" 
+    data-pswp-width="1200" data-pswp-height="800" 
+    data-caption="[2025-07] Canon EOS R10 + RF-S18-150mm F3.5-6.3 IS STM | f/10.0 1/250s ISO 100 @150mm">
+    <img src="photos/thumbs/2025-07-18_IMG_0481.jpg" alt="[2025-07] Canon EOS R10 + RF-S18-150mm F3.5-6.3 IS STM | f/10.0 1/250s ISO 100 @150mm">
+  </a>
+  <a href="photos/2025-07-18_IMG_0548.jpg" 
+    data-pswp-width="1200" data-pswp-height="800" 
+    data-caption="[2025-07] Canon EOS R10 + RF-S18-150mm F3.5-6.3 IS STM | f/7.1 1/640s ISO 160 @150mm">
+    <img src="photos/thumbs/2025-07-18_IMG_0548.jpg" alt="[2025-07] Canon EOS R10 + RF-S18-150mm F3.5-6.3 IS STM | f/7.1 1/640s ISO 160 @150mm">
+  </a>
+  <a href="photos/2025-07-18_IMG_0553.jpg" 
+    data-pswp-width="1200" data-pswp-height="800" 
+    data-caption="[2025-07] Canon EOS R10 + RF-S18-150mm F3.5-6.3 IS STM | f/7.1 1/640s ISO 160 @150mm">
+    <img src="photos/thumbs/2025-07-18_IMG_0553.jpg" alt="[2025-07] Canon EOS R10 + RF-S18-150mm F3.5-6.3 IS STM | f/7.1 1/640s ISO 160 @150mm">
+  </a>
+  <a href="photos/2025-07-18_IMG_0610.jpg" 
+    data-pswp-width="800" data-pswp-height="1200" 
+    data-caption="[2025-07] Canon EOS R10 + RF-S18-150mm F3.5-6.3 IS STM | f/7.1 1/125s ISO 200 @150mm">
+    <img src="photos/thumbs/2025-07-18_IMG_0610.jpg" alt="[2025-07] Canon EOS R10 + RF-S18-150mm F3.5-6.3 IS STM | f/7.1 1/125s ISO 200 @150mm">
+  </a>
+  <a href="photos/2025-07-19_IMG_8129.jpg" 
+    data-pswp-width="1200" data-pswp-height="800" 
+    data-caption="[2025-07] Canon EOS 60D + EF70-200mm f/4L USM | f/4.5 1/800s ISO 200 @200mm">
+    <img src="photos/thumbs/2025-07-19_IMG_8129.jpg" alt="[2025-07] Canon EOS 60D + EF70-200mm f/4L USM | f/4.5 1/800s ISO 200 @200mm">
+  </a>
+  <a href="photos/2025-07-19_IMG_8146.jpg" 
+    data-pswp-width="1200" data-pswp-height="800" 
+    data-caption="[2025-07] Canon EOS 60D + EF70-200mm f/4L USM | f/4.0 1/640s ISO 125 @200mm">
+    <img src="photos/thumbs/2025-07-19_IMG_8146.jpg" alt="[2025-07] Canon EOS 60D + EF70-200mm f/4L USM | f/4.0 1/640s ISO 125 @200mm">
+  </a>
+  <a href="photos/2025-07-19_20250719-9765-IMG8164-Enhanced-SR.jpg" 
+    data-pswp-width="1200" data-pswp-height="800" 
+    data-caption="[2025-07] Canon EOS 60D + EF70-200mm f/4L USM | f/4.0 1/640s ISO 100 @200mm">
+    <img src="photos/thumbs/2025-07-19_20250719-9765-IMG8164-Enhanced-SR.jpg" alt="[2025-07] Canon EOS 60D + EF70-200mm f/4L USM | f/4.0 1/640s ISO 100 @200mm">
+  </a>
+  <a href="photos/2025-07-19_IMG_8226.jpg" 
+    data-pswp-width="1200" data-pswp-height="800" 
+    data-caption="[2025-07] Canon EOS 60D + EF70-200mm f/4L USM | f/4.0 1/640s ISO 100 @200mm">
+    <img src="photos/thumbs/2025-07-19_IMG_8226.jpg" alt="[2025-07] Canon EOS 60D + EF70-200mm f/4L USM | f/4.0 1/640s ISO 100 @200mm">
   </a>
 
 </div>
@@ -347,6 +386,14 @@ lightbox.on('uiRegister', function() {
 
   lightbox.init();
 </script>
-
+<script>
+  $(function() {
+    $("#gallery").justifiedGallery({
+      rowHeight : 300,
+      margins : 4,
+      lastRow : 'center'
+    });
+  });
+</script>
 </body>
 </html>
