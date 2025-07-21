@@ -24,10 +24,7 @@ def get_exif_datetime(path):
             exif_dict = {TAGS.get(k): v for k, v in exif.items()}
             date_str = exif_dict.get("DateTimeOriginal") or exif_dict.get("DateTime")
             if date_str:
-                print(date_str)
                 return datetime.strptime(date_str, "%Y:%m:%d %H:%M:%S")
-            else:
-                print("dupa")
     except Exception as e:
         print(f"[{path.name}] Błąd: {e}")
         pass
@@ -45,16 +42,10 @@ def get_exif_caption(img_path):
         with open(img_path, 'rb') as f:
             tags = exifread.process_file(f, stop_tag="UNDEF", details=False)
 
-        #print(f"EXIF for {img_path.name}:")
         if not tags:
             print(f"EXIF for {img_path.name}:")
             print("  brak EXIF")
             return ""
-
-        # for tag in ["Image Model", "EXIF LensModel", "EXIF FocalLength", "EXIF FNumber",
-                    # "EXIF ExposureTime", "EXIF ISOSpeedRatings", "EXIF DateTimeOriginal"]:
-            # if tag in tags:
-                # print(f"  {tag}: {tags[tag]}")
 
         def g(tag):
             return str(tags.get(tag, '')).strip()
@@ -91,17 +82,7 @@ def get_exif_caption(img_path):
         except Exception:
             pass
 
-        parts = [
-            f"[{dt}]" if dt else "",
-            model,
-            f"+ {lens}" if lens else "",
-            f"{fnumber} {exposure}s" if fnumber or exposure else "",
-            f"ISO {iso}" if iso else "",
-            f"@{focal}" if focal else "",
-        ]
-
         return f"[{dt}] {model} + {lens} | {fnumber} {exposure}s ISO {iso} @{focal}"
-        #return " ".join(p for p in parts if p)
 
     except Exception as e:
         print(f"  Błąd odczytu EXIF: {e}")
