@@ -9,7 +9,7 @@ gallery_title = "Jędrzej Pieczyrak - Portfolio"
 output_file = "index.html"
 image_folder = "photos" # input folder with images
 thumbs_folder = Path(image_folder) / "thumbs"
-thumb_size = (400, 400)
+thumb_size = (300, 300)
 write_caption_on_image = False
 
 thumbs_folder.mkdir(parents=True, exist_ok=True)
@@ -95,10 +95,14 @@ html_head = f"""<!DOCTYPE html>
   <meta charset="UTF-8">
   <title>{gallery_title}</title>
   <link rel="stylesheet" href="https://unpkg.com/photoswipe@5/dist/photoswipe.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js"></script>
   <style>
     body {{ font-family: sans-serif; background: #111; color: #eee; padding: 2rem; }}
-    .gallery {{ display: flex; flex-wrap: wrap; gap: 10px; }}
-    .gallery a img {{ height: 200px; height: auto; border: 2px solid #333; }}
+    #gallery {{  width: 90%;  margin: auto;}}
+    .gallery a img {{  border: 2px solid #333; }}
     .pswp__custom-caption {{
       color: #eee;
       font-size: 14px;
@@ -224,7 +228,15 @@ lightbox.on('uiRegister', function() {
 
   lightbox.init();
 </script>
-
+<script>
+  $(function() {
+    $("#gallery").justifiedGallery({
+      rowHeight : 300,
+      margins : 4,
+      lastRow : 'center'
+    });
+  });
+</script>
 </body>
 </html>
 """
