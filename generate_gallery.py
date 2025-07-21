@@ -1,6 +1,7 @@
 import os
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
+from PIL.ExifTags import TAGS
 import exifread
 from datetime import datetime
 
@@ -14,12 +15,30 @@ write_caption_on_image = False
 
 thumbs_folder.mkdir(parents=True, exist_ok=True)
 
+def get_exif_datetime(path):
+    try:
+        with Image.open(path) as img:
+            exif = img._getexif()
+            if not exif:
+                return None
+            exif_dict = {TAGS.get(k): v for k, v in exif.items()}
+            date_str = exif_dict.get("DateTimeOriginal") or exif_dict.get("DateTime")
+            if date_str:
+                print(date_str)
+                return datetime.strptime(date_str, "%Y:%m:%d %H:%M:%S")
+            else:
+                print("dupa")
+    except Exception as e:
+        print(f"[{path.name}] Błąd: {e}")
+        pass
+    return None
+
 # find images
 image_dir = Path(image_folder)
-images = sorted([f for f in image_dir.iterdir() if f.suffix.lower() in [".jpg", ".jpeg", ".png"]])
-
-from datetime import datetime
-import exifread
+images = sorted(
+    [f for f in image_dir.iterdir() if f.suffix.lower() in [".jpg", ".jpeg", ".png"]],
+    key=lambda f: get_exif_datetime(f) or datetime.max
+)
 
 def get_exif_caption(img_path):
     try:
